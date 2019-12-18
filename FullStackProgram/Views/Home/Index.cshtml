@@ -1,0 +1,68 @@
+﻿@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+
+@{
+    Layout = null;
+    <link href="~/css/site.css" rel="stylesheet" />
+    <script src="~/js/site.js"></script>
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Tabblad titel hier!</title>
+    <script>
+        function changBackground() {
+            document.body.style.background = Math.floor(Math.random() * 16777215).toString(16);
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="indeed-logo">
+                <a href="@Url.Action("Index", "Home")">
+                    <img src="~/images/indeedLogo.png" width="80" height="20" />
+                </a>
+            </div>
+            <div class="nav-item-left">
+                <a asp-controller="Home" asp-action="ZoekVacatures">
+                        Vacatures zoeken
+                </a>
+            </div>
+            <div class="nav-item-left">
+                <a asp-controller="Home" asp-action="Werkgeversbeoordelingen">Werkgeversbeoordelingen</a>
+            </div>
+            <div class="nav-item-left">
+                <a asp-controller="Home" asp-action="Salarissen">Salarissen zoeken</a>
+            </div>
+            <div class="nav-item-right">
+                <a asp-controller="Home" asp-action="UploadCV">Upload je cv</a>
+            </div>
+            <div class="nav-item-right">
+                <a asp-controller="Home" asp-action="Inloggen">Inloggen</a>
+            </div>
+            <div class="nav-item-right">
+                <a asp-controller="Home" asp-action="PlaatsVacature">Werkgevers / PlaatsVacature</a>
+            </div>
+        </nav>
+    </header>
+
+    <div class="vac-zoek-container">
+        @{ 
+            Html.RenderPartial();
+        }
+    </div>
+    <div class="text-center">
+        <h1 class="display-4">Paginatitel hier!</h1>
+
+        <p>
+            Hallo!
+        </p>
+    </div>
+
+    <button id="backgroundButton" onclick="changBackground()">Klik hierop om de achtergroundkleur te wijzigen</button>
+
+</body>
+</html>

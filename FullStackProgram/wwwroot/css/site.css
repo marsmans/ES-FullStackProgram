@@ -1,0 +1,91 @@
+﻿body {
+}
+
+.navbar {
+    overflow: hidden;
+    margin: 0;
+}
+
+.navbar .indeed-logo {
+    float: left;
+    display: block;
+    position: static;
+    width: auto;
+}
+
+.navbar .nav-item-left {
+    float: left;
+    display: block;
+    text-align: center;
+    padding: 14px 16px;
+}
+
+.navbar .nav-item-left a {
+    text-decoration: none;
+}
+
+.navbar .nav-item-left {
+    border-bottom: 2px solid white;
+}
+
+.navbar .nav-item-left:hover {
+    border-bottom: 2px solid blue;
+}
+
+.navbar .nav-item-right {
+    float: right;
+    display: block;
+    text-align: center;
+    padding: 14px 16px;
+    //text-decoration: none;
+}
+
+.navbar .nav-item-right a {
+    text-decoration: none;
+}
+
+.navbar .nav-item-right {
+    border-bottom: 2px solid white;
+}
+
+.navbar {
+    border-bottom: 1px solid lightblue;
+}
+
+.navbar .nav-item-right:hover {
+    border-bottom: 2px solid blue;
+}
+
+
+.text-center {
+    position: relative;
+    text-align: center;
+}
+
+.navbar ul {
+    list-style-type: none;
+}
+
+.navbar li {
+    float: left;
+}
+
+.navbar li a {
+    display: block;
+    text-align: center;
+    padding: 16px;
+    text-decoration: none;
+}
+
+.navbar li {
+    border-bottom: 1px solid white;
+}
+
+.navbar li:hover {
+    border-bottom: 1px solid blue;
+}
+
+.navbar li a:active {
+    text-decoration: underline;
+    background-color: black;
+}
